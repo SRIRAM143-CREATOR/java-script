@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div style="text-align: center;">
+ <h1 >
+    Task Manager
+ </h1>   
+ <input type="" style="text-align: center;" id="text" placeholder="Enter text">
+   <button style="background-color: green; color: white;" onclick="change()">
+    ADD Task
+   </button>
+  
+<button style="background-color: red;" onclick="Delete()">
+    Delete
+</button>
+   <p>
+
+   </p>
+
+</div>
+
+<script type="text/javascript">
+   
+    function change(){
+        res=document.getElementById("text").value
+        document.querySelector("p").textContent=res;
+          
+    }
+    function Delete(){
+          document.querySelector("p").textContent="Task Deleted"
+    }
+
+    
+
+
+</script>
+
+</body>
+</html>
