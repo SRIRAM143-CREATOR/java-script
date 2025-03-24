@@ -21,13 +21,17 @@ button {
 #output {
     margin-top: 20px;
 }
+input{
+    border-radius: 30px;
+    padding: 10px;
+}
 
     </style>
 </head>
 <body style="margin-left: 40%;">
-    <i class="bi bi-list-check"></i><h1>TASK MANAGER</h1>
-    <input type="text" id="inputBox" placeholder="Enter text here">
-    <button id="okButton" class="btn btn-success">ADD TASK</button>
+    <i class="bi bi-list-check"></i><h1>Task Manager </h1>
+    <input type="text" id="inputBox" placeholder="Enter your task here" size="20">
+    <button id="okButton" class="btn btn-warning">ADD TASK</button>
     <div id="output"></div>
 
     <script type="text/javascript">
@@ -39,10 +43,11 @@ button {
         div.textContent = ` ${inputText}`;
 
         const deleteButton = document.createElement("button");
-        deleteButton.textContent = "Delete";
+        deleteButton.textContent = "Remove";
         deleteButton.style.marginLeft = "10px";
-        deleteButton.style.background = "red";
-        deleteButton.style.color = "white";
+
+        deleteButton.style.background = "yellow";
+        deleteButton.style.color = "black";
         deleteButton.style.border = "white";
         deleteButton.style.borderRadius = "7px";
         deleteButton.addEventListener("click", function () {
